@@ -1,0 +1,420 @@
+.Profile-page {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+.hero-section{
+  background: aliceblue;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 30px 30px;
+}
+.Training-hours {
+  padding: 20px;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.dates-slider {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px 0;
+  gap: 15px;
+  cursor: grab; /* מראה את האייקון של גרירה */
+}
+
+.dates-slider.grabbing {
+  cursor: grabbing; /* מראה את האייקון של גרירה פעילה */
+}
+
+.training-button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.training-button.expired {
+  background-color: grey;
+}
+
+.training-button.unavailable {
+  background-color: red;
+}
+
+.training-button.available {
+  background-color: green;
+}
+
+.training-button.disabled {
+  background-color: lightgrey;
+}
+
+
+.date-item {
+  min-width: 100px;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hours-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.date-view{
+  margin-top: 0;
+}
+.day-view{
+  margin-bottom: 3px;
+}
+.training-button {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.training-button.available {
+  background-color: #d9ead3; /* ירוק */
+  color: #333;
+}
+
+.training-button.unavailable {
+  background-color: #f4cccc; /* כתום */
+  color: #333;
+  cursor: not-allowed;
+}
+
+.training-button.disabled {
+  background-color: #f4cccc; /* אפור */
+  color: #333;
+  cursor: not-allowed;
+}
+
+.training-button.expired {
+  background-color: #f4cccc  ; /* אדום */
+  color: #333;
+  cursor: not-allowed;
+}
+.user-info {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding: 10px;
+}
+p.user-params {
+  text-align: center;
+  background: #d0e0e3;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 300;
+}
+button.logout-button {
+
+  background-color: #d0e0e3;
+  margin: 0;
+  border-radius: 0px 0px 20px 0px;
+}
+img.logout-icon {
+  width: 20px;
+}
+
+.appointments-section {
+  background: aliceblue;
+  max-width: 200px; /* גודל מרבי */
+  width: 100%; /* מתאים לרוחב */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל */
+  position: absolute;
+  top: 50%; /* ממרכז את האלמנט אנכית */
+  left: 50%; /* ממרכז את האלמנט אופקית */
+  transform: translate(-50%, -50%); /* ממרכז בדיוק במרכז */
+  border-radius: 8px; /* פינות מעוגלות */
+  z-index: 1000; /* שים לב שהיא על כל האלמנטים */
+  justify-items: center;
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* רקע כהה */
+  z-index: 999; /* נמוך מהטבלה כדי לא לחפוף */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff; /* רקע לבן */
+  border-radius: 8px; /* פינות מעוגלות */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל עדין */
+}
+
+th, td {
+  text-align: center;
+  padding: 5px 5px;
+
+}
+
+th {
+  background-color: #d0e0e3; /* צבע רקע בהיר לכותרת */
+  color: #333; /* צבע טקסט כהה */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+td {
+  border-bottom: 1px solid #e0e0e0; /* קו תיחום תחתון לכל שורה */
+  color: #555; /* צבע טקסט אפור כהה */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* שינוי צבע שורה כשעוברים עליה עם העכבר */
+}
+
+.close-button button {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+
+button.my-appointments-btn {
+  background: aliceblue;
+  border: 1px solid #333;
+  border-radius: 15px;
+  color: #333;
+}
+.my-appointments-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.my-appointments-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h1.greeting {
+  color: #333;
+  font-weight: 300;
+}
+
+.no-more-appointments {
+  margin: 20px;
+  justify-self: center;
+  background: #f4cccc;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.Login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.Login-form h1 {
+  color: #333;
+  font-weight: 300;
+margin: 0;
+padding-bottom: 20px;
+}
+
+.Login-form form {
+  width: 100%;
+  direction: rtl;
+
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Login-form form div {
+  margin-bottom: 20px;
+}
+
+.Login-form label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.Login-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  width: -webkit-fill-available;
+}
+
+.Login-form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.Login-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #d0e0e3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Login-form button:hover {
+  background-color: #45a049;
+}
+
+.Login-form .message {
+  margin-top: 15px;
+  color: red;
+  font-size: 1rem;
+}
+
+.Login-form img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 0;
+  object-fit: contain;
+}
+
+.RenewSubscription-page {
+  justify-items: center;
+  padding: 50px;
+}
+/*notinfication*/
+.profile-header {
+  display: inline-flex
+;
+}
+.notifications-section {
+  right: 0;
+  position: absolute;
+}
+
+.notifications-button {
+  background-color: #d0e0e3;
+  margin: 0;
+  border-radius: 0px 0px 0px 20px;
+  color: #000;
+  font-size: 20px;
+}
+
+.notifications-popup {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: aliceblue;
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.popup-content {
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-text {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.notification-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+}
+
+.no-notifications {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+button:hover {
+  background-color: unset;
+}
